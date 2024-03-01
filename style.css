@@ -1,0 +1,69 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ -webkit-font-smoothing:antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+ font-size:62.5%
+}
+
+body {
+ font-size:1.6rem;
+}
+
+fieldset legend, form, .check input {
+ margin-bottom: 2rem;
+}
+
+main {
+  margin-left: 3rem;
+  max-width: 32rem;
+  margin-inline:auto
+}
+
+.subject label,
+.subject input{
+ display: flex; 
+}
+
+.check input {
+    cursor: pointer;
+}
+
+button {
+ font-size:0.9rem;
+ font-weight: normal;
+ border:1rem;
+ border-radius: 0.5rem;
+}
+
+button:hover {
+    background: rgb(240, 166, 166);
+    cursor:pointer;
+}
+
+@media (min-width:770px) {
+    main {
+        flex-direction: row;
+        max-width: 100%;
+        margin: 1rem;
+    }
+}
+
+/*
+MARGIN-INLINE:
+A propriedade margin-inline é uma abreviação para margin-inline-start e margin-inline-end, onde:
+margin-inline-start: Define a margem à esquerda ou à direita do elemento, 
+dependendo da direção do texto. Por exemplo, em textos escritos da esquerda para a direita 
+(como o inglês), margin-inline-start define a margem à esquerda do elemento, 
+enquanto em textos escritos da direita para a esquerda (como o árabe), 
+margin-inline-start define a margem à direita do elemento.
+
+margin-inline-end: Define a margem à direita ou à esquerda do elemento, 
+dependendo da direção do texto. Por exemplo, em textos escritos da esquerda para a direita 
+(como o inglês), margin-inline-end define a margem à direita do elemento, 
+enquanto em textos escritos da direita para a esquerda (como o árabe), 
+margin-inline-end define a margem à esquerda do elemento.
+*/
